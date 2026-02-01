@@ -1,6 +1,7 @@
 streamlit==1.31.0
 pandas==2.1.4
-numpy==1.26.5   # upgrade to match pandas
+numpy==1.27.5
+  # upgrade to match pandas
 
 # NLP & Machine Learning
 scikit-learn==1.3.2
