@@ -11,6 +11,9 @@ from config import (
 np.random.seed(RANDOM_SEED)
 random.seed(RANDOM_SEED)
 
+# ============================================================================
+# REALISTIC ISSUE TEMPLATES BY CATEGORY
+# ============================================================================
 
 ISSUE_TEMPLATES = {
     "Network": [
@@ -164,7 +167,7 @@ def assign_priority(issue_text, category, timestamp):
     high_priority_keywords = [
         "urgent", "emergency", "critical", "asap", "immediately",
         "completely down", "not working", "can't access", "exam", 
-        "deadline", "today", "jaldi", "turant", "zaroor"
+        "deadline", "today", "jaldi", "turant", "zaroor", "toot", "service", "help","theek karo"
     ]
     
     if any(keyword in text_lower for keyword in high_priority_keywords):
