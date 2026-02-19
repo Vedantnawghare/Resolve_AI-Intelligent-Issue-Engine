@@ -1,7 +1,7 @@
 # Rana-Hammirdev_PS14
-# 🎯 Intelligent Issue Insight Engine - Complete Documentation
+# Intelligent Issue Insight Engine - Complete Documentation
 
-## 📋 Table of Contents
+## Table of Contents
 
 1. [Overview](#overview)
 2. [Features](#features)
@@ -47,29 +47,31 @@ An **explainable AI system** that transforms unstructured issue descriptions int
 
 ## Architecture
 ```
-User Input (Hinglish/Informal)
-        ↓
-[NLP Preprocessing Pipeline]
-  • Normalization
-  • Language Detection
-  • Spelling Correction
-  • Hinglish Transliteration
-  • Formalization
-        ↓
+           User Input (Hinglish/Informal)
+                        ↓
+           [NLP Preprocessing Pipeline]
+                • Normalization
+              • Language Detection
+              • Spelling Correction
+            • Hinglish Transliteration
+                 • Formalization
+                        ↓
 [ML Models]                    [Rule Engine]
-  • TF-IDF Vectorization         • Keyword Rules
-  • Category Classifier          • Time-Based Rules
-  • Urgency Classifier           • Impact Assessment
+• TF-IDF Vectorization         • Keyword Rules
+• Category Classifier          • Time-Based Rules
+• Urgency Classifier           • Impact Assessment
         ↓                              ↓
-            [Priority Intelligence]
+        |______________________________|
+                     ↓
+           [Priority Intelligence]
             • ML + Rules Hybrid
             • Auto-Escalation
             • Department Load
                     ↓
-        [Explainable Output]
-        • Final Priority
-        • Routing Decision
-        • Complete Explanation
+            [Explainable Output]
+             • Final Priority
+            • Routing Decision
+           • Complete Explanation
 ```
 
 ---
@@ -147,7 +149,7 @@ print(f"Category: {ml_result['category']}")
 print(f"Priority: {ml_result['priority']}")
 ---
 ---
-## 🧠 Advanced NLP Pipeline
+## Advanced NLP Pipeline
 
 ### Pipeline Steps:
 
